@@ -1,0 +1,14 @@
+.wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+
+    width: 340px;
+    height: 540px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #0c032d;
+    background-image: linear-gradient(315deg, #2a147b 0%,  #0c032d 74%);
+}
