@@ -2,7 +2,11 @@ import "./Screen.css"
 import React from "react"
 
 function Screen() {
+    return (
+        <div className="screen">
 
+        </div>
+    )
 }
 
 export default Screen
