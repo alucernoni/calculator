@@ -1,10 +1,15 @@
 import "./Button.css"
 import React from "react"
 
-function Button() {
+function Button({value, className}) {
     return (
-        <button className="button">
-            
+        <button 
+        className={className}
+        onClick={() => {
+            console.log(`${value} clicked!`)
+        }}
+        >
+            {value}
         </button>
     )
 }
