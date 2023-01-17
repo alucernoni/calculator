@@ -19,11 +19,8 @@ function ButtonBox() {
                     return (
                         <Button
                             key={i}
-                            className={btn === "=" ? "equals" : ""}
+                            className={btn === "=" ? "equals" : "button"}
                             value={btn}
-                            onClick={() => {
-                                console.log(`${btn} clicked!`)
-                            }}
                         />
                     )
                 })

@@ -1,8 +1,16 @@
 .screen {
     height: 80px;
-    border-radius: 2%;
+    border-radius: 10px;
     /* background-color: #ffb996; */
     background-color: aliceblue;
     margin-top: 5px;
     /* background-color: #74546a; */
+    margin-bottom: 10px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: #371f8d;
+    font-weight: bold;
+    box-sizing: border-box;
 }
