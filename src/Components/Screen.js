@@ -1,11 +1,12 @@
 import "./Screen.css"
 import React from "react"
+import {Textfit} from "react-textfit"
 
 function Screen() {
     return (
-        <div className="screen">
+        <Textfit className="screen" mode="single" max={70}>
 
-        </div>
+        </Textfit>
     )
 }
 
