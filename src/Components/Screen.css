@@ -1,7 +1,8 @@
 .screen {
     height: 80px;
     border-radius: 2%;
-    background-color: #ffb996;
+    /* background-color: #ffb996; */
+    background-color: aliceblue;
     margin-top: 5px;
     /* background-color: #74546a; */
 }
