@@ -6,7 +6,7 @@ import ButtonBox from "./ButtonBox"
 function Wrapper() {
     return (
     <div className="wrapper">
-        <Screen/>
+        <Screen value="0"/>
         <ButtonBox/>
     </div>
     )
