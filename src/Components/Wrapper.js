@@ -7,7 +7,7 @@ function Wrapper() {
 
     let [calc, setCalc] = useState({
         sign: "",
-        num: 8,
+        num: 0,
         res: 0
     })
 
@@ -21,7 +21,13 @@ function Wrapper() {
     }
 
     function inversionHandler() {
-        return (calc.sign === "" ? calc.sign = "-" : "")
+        setCalc({
+            ...calc,
+            sign: "",
+            num: calc.num ? calc.num * -1 : 0,
+            res: calc.res ? calc.res * -1 : 0
+        })
+        // return (calc.sign === "" ? calc.sign = "-" : "")
     }
 
     function percentHandler() {
