@@ -7,12 +7,17 @@ function Wrapper() {
 
     let [calc, setCalc] = useState({
         sign: "",
-        num: 0,
+        num: 8,
         res: 0
     })
 
     function clearScreenHandler() {
-        return (calc.num = 0)
+        setCalc({
+            ...calc,
+            sign: "",
+            num: 0,
+            res: 0
+        })
     }
 
     function inversionHandler() {
@@ -20,7 +25,23 @@ function Wrapper() {
     }
 
     function percentHandler() {
+
+    }
+
+    function equalsHandler() {
+
+    }
+
+    function decimalHandler() {
         
+    }
+
+    function signHandler() {
+
+    }
+
+    function numHandler(e) {
+
     }
 
 

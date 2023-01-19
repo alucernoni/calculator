@@ -21,7 +21,9 @@ function ButtonBox({clearScreenHandler, inversionHandler, percentHandler, equals
                             key={i}
                             className={btn === "=" ? "equals" : "button"}
                             value={btn}
-                            onClick={
+                            
+                            handleClicks={
+                                // console.log(`${btn} was clicked!`)}}
                                 btn === "C"
                                 ? clearScreenHandler
                                 : btn === "+/-"

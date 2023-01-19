@@ -1,13 +1,15 @@
 import "./Button.css"
 import React from "react"
 
-function Button({value, className}) {
+function Button({value, className, handleClicks}) {
     return (
         <button 
         className={className}
-        onClick={() => {
-            console.log(`${value} clicked!`)
-        }}
+        // onClick={handleClicks({value})}
+        // onClick={() => {
+        //     console.log(`${value} clicked!`)
+        // }}
+        onClick={handleClicks}
         >
             {value}
         </button>
