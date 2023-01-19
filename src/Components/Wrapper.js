@@ -27,11 +27,15 @@ function Wrapper() {
             num: calc.num ? calc.num * -1 : 0,
             res: calc.res ? calc.res * -1 : 0
         })
-        // return (calc.sign === "" ? calc.sign = "-" : "")
     }
 
     function percentHandler() {
-
+        setCalc({
+            ...calc,
+            sign: "",
+            num: calc.num ? calc.num * .01 : 0,
+            res: calc.res ? calc.res * .01 : 0
+        })
     }
 
     function equalsHandler() {
