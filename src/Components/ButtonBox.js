@@ -2,11 +2,11 @@ import "./ButtonBox.css"
 import React from "react"
 import Button from "./Button"
 
-function ButtonBox() {
+function ButtonBox({clearScreenHandler, inversionHandler, percentHandler, equalsHandler, decimalHandler, signHandler, numHandler}) {
 
     const buttonValues = [
         ["C", "+/-", "%", "/"],
-        [7, 8, 9, "X"],
+        [7, 8, 9, "*"],
         [4, 5, 6, "-"],
         [1, 2, 3, "+"],
         [0, ".", "="]
@@ -21,6 +21,21 @@ function ButtonBox() {
                             key={i}
                             className={btn === "=" ? "equals" : "button"}
                             value={btn}
+                            onClick={
+                                btn === "C"
+                                ? clearScreenHandler
+                                : btn === "+/-"
+                                ? inversionHandler
+                                : btn === "%"
+                                ? percentHandler
+                                : btn === "="
+                                ? equalsHandler
+                                : btn === "."
+                                ? decimalHandler
+                                : btn === "/" || "*" || "+" || "-"
+                                ? signHandler
+                                : numHandler
+                            }
                         />
                     )
                 })
