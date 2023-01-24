@@ -7,7 +7,7 @@ function Wrapper() {
 
     let [calc, setCalc] = useState({
         sign: "",
-        num: 0,
+        num: [],
         res: 0
     })
 
@@ -15,7 +15,7 @@ function Wrapper() {
         setCalc({
             ...calc,
             sign: "",
-            num: 0,
+            num: [],
             res: 0
         })
     }
@@ -46,12 +46,18 @@ function Wrapper() {
         
     }
 
-    function signHandler() {
-
+    function signHandler(e) {
+        e.preventDefault()
+        console.log(e)
     }
 
     function numHandler(e) {
-
+        e.preventDefault()
+        console.log(e)
+        // setCalc({
+        //     ...calc,
+        //     num: calc.num === "0" ? calc.num = number : calc.num = []
+        // })
     }
 
 
